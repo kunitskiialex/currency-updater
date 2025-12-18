@@ -66,7 +66,7 @@ X-API-KEY: SECRET123
 
 
 
-https://your_username.pythonanywhere.com/update?update_from=2023-01-02&update_to=2023-01-08
+https://kunitskii.pythonanywhere.com/update?update_from=2023-01-02&update_to=2023-01-08
 
 
 ---
