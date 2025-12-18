@@ -114,12 +114,3 @@ Access to the Google Sheet is provided for verification.
 **Oleksii Kunytskyi**  
 📧 Email: kunytskyi.data@gmail.com  
 💼 LinkedIn: https://www.linkedin.com/in/datapulse/
-- KPI values are calculated only for working days (Mon–Fri).
-
----
-
-## Author
-
-Oleksii Kunytskyi  
-Email: kunytskyi.data@gmail.com  
-LinkedIn: https://www.linkedin.com/in/datapulse/
