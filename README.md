@@ -1,49 +1,83 @@
-# Sales & Performance Dashboard
+# Sales & Performance Dashboard (Power BI + Python API)
 
 ## Project Overview
 
-This project was developed as a technical test assignment and demonstrates a complete analytics solution including:
+This repository contains a complete analytical solution developed as a technical test assignment.  
+The project combines **Power BI analytics**, **Python backend development**, and **external data integration**.
 
-- Power BI dashboard with sales, calls, and KPI analytics
-- Python-based API service for updating currency exchange rates
-- Google Sheets used as an external data source for currency rates
-- Integration between Python service, Google Sheets, and Power BI
+The solution includes:
+- A Power BI dashboard with KPI, sales, and call performance analytics
+- A Python (Flask) API service for updating currency exchange rates
+- Google Sheets as a dynamic data source for currency rates
+- End-to-end integration between Python API, Google Sheets, and Power BI
+
+---
+
+## Repository Structure
+
+The repository uses a simple and clear structure:
+
+.
+├── app.py
+├── README.md
+├── requirements
+├── .gitignore
+├── power_bi_dashboard.png.png
+└── Тестове завдання maxidtp (Power BI, POST, python)_v2.xlsx
+
+yaml
+Копировать код
+
+### Files Description
+
+- **app.py** — Flask application for updating USD/UAH currency rates
+- **requirements** — Python dependencies required to run the API
+- **power_bi_dashboard.png.png** — Screenshot of the final Power BI dashboard
+- **Тестове завдання maxidtp (Power BI, POST, python)_v2.xlsx** — Source dataset used for Power BI modeling
+- **.gitignore** — Excludes credentials and cache files from version control
 
 ---
 
 ## Power BI Dashboard
 
-The Power BI report provides performance analytics by manager with the following key metrics:
+The Power BI report provides performance analytics by manager and includes the following metrics:
 
 - KPI Minutes vs Actual Call Minutes
 - KPI Leads vs Actual Leads
 - Successful Calls
 - Sales Amount converted to USD
-- Successful Events and Personal deals
+- Successful Events deals
+- Successful Personal deals
 
-### Key Features
+### Dashboard Features
 
-- Dynamic date filtering using a calendar slicer
-- KPI calculation based on working days (Monday–Friday)
-- Currency conversion using daily USD/UAH exchange rates
-- Star schema data model (fact and dimension tables)
-- Clear comparison of KPI vs actual performance
+- Interactive **date slicer**
+- KPI calculations based on **working days**
+- Currency conversion using **daily USD/UAH rates**
+- Star-schema data model (fact and dimension tables)
+- Manager-level performance comparison
+
+### Dashboard Preview
+
+![Power BI Dashboard](power_bi_dashboard.png.png)
 
 ---
 
 ## Currency Update Service (Python)
 
-A Python API service built with Flask is used to update USD/UAH exchange rates.
+A Python API service built with **Flask** is used to update USD/UAH exchange rates.
 
-### API Features
+### Key Features
 
-- Accepts date range parameters: `update_from` and `update_to`
+- Accepts date range parameters:
+  - `update_from`
+  - `update_to`
 - Date format: `yyyy-mm-dd`
 - Default behavior: both dates equal the current date
-- Uses the National Bank of Ukraine (NBU) public API
-- Fallback logic: if a rate for a specific date is unavailable, the service uses the last available rate before that date
-- Simple API key authorization
-- Writes and updates currency data in Google Sheets
+- Uses the **National Bank of Ukraine (NBU) public API**
+- Automatically handles missing dates by using the latest available rate
+- API key authorization
+- Writes data directly into Google Sheets
 
 ---
 
@@ -58,59 +92,75 @@ sql
 
 ### Headers
 
-| Header       | Value     |
-|--------------|-----------|
-| X-API-KEY    | SECRET123 |
+| Header      | Value     |
+|------------|-----------|
+| X-API-KEY  | SECRET123 |
 
 ### Query Parameters
 
-| Parameter    | Description                         |
-|--------------|-------------------------------------|
-| update_from | Start date (yyyy-mm-dd)             |
-| update_to   | End date (yyyy-mm-dd)               |
+| Parameter    | Description                   |
+|-------------|-------------------------------|
+| update_from | Start date (yyyy-mm-dd)       |
+| update_to   | End date (yyyy-mm-dd)         |
 
 ### Example Request
 
-https://kunitskii.pythonanywhere.com/update?update_from=2023-01-02&update_to=2023-01-08
+GET /update?update_from=2023-01-02&update_to=2023-01-08
 
 yaml
 Копировать код
 
 ---
 
-## Google Sheets
+## Google Sheets (Currency Rates)
 
-The service updates the following Google Sheet structure:
+The updated currency rates are stored in a Google Sheet.
 
-| Date       | USD_UAH |
-|------------|---------|
-| 02.01.2023 | 36.56   |
+🔗 **Public Google Sheet with USD/UAH rates:**  
+https://docs.google.com/spreadsheets/d/1Ns-Oundghc1vtwIEEWIHLtCtkGJEUk__jKJoqa_wRQA/edit?usp=sharing
 
-The Google Sheet is connected to Power BI and used for currency conversion in sales calculations.
+---
 
-Access to the Google Sheet is provided for verification.
+## Dataset
+
+The dataset used for this project is provided as an Excel file:
+
+- **Тестове завдання maxidtp (Power BI, POST, python)_v2.xlsx**
+
+The file contains:
+- CRM leads data
+- Call data
+- KPI reference tables
+- Manager and pipeline dimensions
+
+This file is included in the repository to allow full verification of the solution.
 
 ---
 
 ## Technologies Used
 
-- Power BI
-- Python (Flask)
-- Google Sheets API
-- National Bank of Ukraine Exchange Rate API
+- **Power BI**
+- **Python 3**
+- **Flask**
+- **Google Sheets API**
+- **gspread**
+- **REST API**
+- **Postman** (for testing)
 
 ---
 
-## Notes & Assumptions
+## Author & Contacts
 
-- If the exchange rate for a specific date is unavailable, the last available rate before that date is used
-- KPI values are calculated only for working days (Monday–Friday)
-- Currency rates are updated on demand via API call
+**Oleksii Kunytskyi**
 
----
+- 📊 Tableau Portfolio:  
+  https://public.tableau.com/app/profile/kunytskyi.oleksii/vizzes
 
-## Author
+- 📄 Resume:  
+  https://drive.google.com/file/d/1p-4zgsXfoiIHE7lGxoN4dXzqnGC9MVFQ/view?usp=sharing
 
-**Oleksii Kunytskyi**  
-📧 Email: kunytskyi.data@gmail.com  
-💼 LinkedIn: https://www.linkedin.com/in/datapulse/
+- 💼 LinkedIn:  
+  https://www.linkedin.com/in/datapulse/
+
+- ✉️ Email:  
+  kunytskyi.data@gmail.com
