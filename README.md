@@ -20,6 +20,7 @@ The repository uses a simple and clear structure:
 .
 ├── app.py
 ├── README.md
+|-- Sales_Performance_Dashboard.pbix
 ├── requirements
 ├── .gitignore
 ├── power_bi_dashboard.png.png
@@ -59,7 +60,7 @@ The Power BI report provides performance analytics by manager and includes the f
 
 ### Dashboard Preview
 
-![Power BI Dashboard](power_bi_dashboard.png.png)
+![Power BI Dashboard](power_bi_dashboard.png)
 
 ---
 
