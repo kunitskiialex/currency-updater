@@ -129,25 +129,19 @@ This file is included in the repository to allow full verification of the soluti
 
 ---
 
-## Technologies Used
+## 🛠️ Tools & Technologies Used
 
-- **Power BI**
-- **Python 3**
-- **Flask**
-- **Google Sheets API**
-- **gspread**
-- **REST API**
-- **Postman** (for testing)
-
-  ![Python](https://img.shields.io/badge/Python-3.10-blue?logo=python)
-![Flask](https://img.shields.io/badge/Flask-API-lightgrey?logo=flask)
-![Power BI](https://img.shields.io/badge/Power%20BI-Dashboard-yellow?logo=powerbi)
-![Google Sheets](https://img.shields.io/badge/Google%20Sheets-API-green?logo=google-sheets)
-![Postman](https://img.shields.io/badge/Postman-Testing-orange?logo=postman)
-![Google Cloud](https://img.shields.io/badge/Google%20Cloud-Credentials-blue?logo=google-cloud)
-![gspread](https://img.shields.io/badge/gspread-Sheets%20integration-brightgreen)
-![REST API](https://img.shields.io/badge/REST-API-lightblue)
-![Git](https://img.shields.io/badge/Git-Version%20Control-black?logo=git)
+| Technology        | Icon |
+|-------------------|-------|
+| Python 3.10       | ![Python](https://img.shields.io/badge/Python-3.10-blue?logo=python) |
+| Flask API         | ![Flask](https://img.shields.io/badge/Flask-API-lightgrey?logo=flask) |
+| Power BI          | ![Power BI](https://img.shields.io/badge/Power%20BI-Dashboard-yellow?logo=powerbi) |
+| Google Sheets API | ![Google Sheets](https://img.shields.io/badge/Google%20Sheets-API-green?logo=google-sheets) |
+| gspread           | ![gspread](https://img.shields.io/badge/gspread-Sheets%20integration-brightgreen) |
+| REST API          | ![REST API](https://img.shields.io/badge/REST-API-lightblue) |
+| Postman           | ![Postman](https://img.shields.io/badge/Postman-Testing-orange?logo=postman) |
+| Google Cloud      | ![Google Cloud](https://img.shields.io/badge/Google%20Cloud-Credentials-blue?logo=google-cloud) |
+| Git               | ![Git](https://img.shields.io/badge/Git-Version%20Control-black?logo=git) |
 
 ---
 
