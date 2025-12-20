@@ -17,14 +17,13 @@ The solution includes:
 
 The repository uses a simple and clear structure:
 
-.
-├── app.py
-├── README.md
-|-- Sales_Performance_Dashboard.pbix
-├── requirements
-├── .gitignore
-├── power_bi_dashboard.png.png
-└── Тестове завдання maxidtp (Power BI, POST, python)_v2.xlsx
+├── app.py                                      # Flask application for updating USD/UAH currency rates
+├── README.md                                   # Project documentation
+├── Sales_Performance_Dashboard.pbix            # Power BI dashboard file
+├── requirements                                # Python dependencies (requirements.txt or folder)
+├── .gitignore                                  # Git ignore rules
+├── power_bi_dashboard.png.png                  # Screenshot of Power BI dashboard
+└── Maxidtp_TechTask_PowerBI_Python_v2.xlsx     # Technical assignment and dataset
 
 ### Files Description
 
