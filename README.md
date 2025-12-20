@@ -26,9 +26,6 @@ The repository uses a simple and clear structure:
 ├── power_bi_dashboard.png.png
 └── Тестове завдання maxidtp (Power BI, POST, python)_v2.xlsx
 
-yaml
-Копировать код
-
 ### Files Description
 
 - **app.py** — Flask application for updating USD/UAH currency rates
@@ -88,8 +85,6 @@ A Python API service built with **Flask** is used to update USD/UAH exchange rat
 
 GET /update
 
-sql
-Копировать код
 
 ### Headers
 
@@ -107,9 +102,6 @@ sql
 ### Example Request
 
 GET /update?update_from=2023-01-02&update_to=2023-01-08
-
-yaml
-Копировать код
 
 ---
 
