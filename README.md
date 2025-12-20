@@ -131,18 +131,17 @@ This file is included in the repository to allow full verification of the soluti
 
 ## 🛠️ Tools & Technologies Used
 
-| Technology        | Icon |
-|-------------------|-------|
-| Python 3.10       | ![Python](https://img.shields.io/badge/Python-3.10-blue?logo=python) |
-| Flask API         | ![Flask](https://img.shields.io/badge/Flask-API-lightgrey?logo=flask) |
-| Power BI          | ![Power BI](https://img.shields.io/badge/Power%20BI-Dashboard-yellow?logo=powerbi) |
-| Google Sheets API | ![Google Sheets](https://img.shields.io/badge/Google%20Sheets-API-green?logo=google-sheets) |
-| gspread           | ![gspread](https://img.shields.io/badge/gspread-Sheets%20integration-brightgreen) |
-| REST API          | ![REST API](https://img.shields.io/badge/REST-API-lightblue) |
-| Postman           | ![Postman](https://img.shields.io/badge/Postman-Testing-orange?logo=postman) |
-| Google Cloud      | ![Google Cloud](https://img.shields.io/badge/Google%20Cloud-Credentials-blue?logo=google-cloud) |
-| Git               | ![Git](https://img.shields.io/badge/Git-Version%20Control-black?logo=git) |
-
+| Technology            | Description                                | Badge |
+|------------------------|--------------------------------------------|-------|
+| **Python 3.10**        | Core language for backend logic             | ![Python](https://img.shields.io/badge/Python-3.10-blue?logo=python) |
+| **Flask**              | Lightweight web framework for REST API     | ![Flask](https://img.shields.io/badge/Flask-API-lightgrey?logo=flask) |
+| **Power BI**           | Interactive dashboard and data visualization | ![Power BI](https://img.shields.io/badge/Power%20BI-Dashboard-yellow?logo=powerbi) |
+| **Google Sheets API**  | External data source for currency rates    | ![Google Sheets](https://img.shields.io/badge/Google%20Sheets-API-green?logo=google-sheets) |
+| **gspread**            | Python library for Sheets integration      | ![gspread](https://img.shields.io/badge/gspread-Sheets%20integration-brightgreen) |
+| **REST API**           | Currency update service via HTTP requests  | ![REST API](https://img.shields.io/badge/REST-API-lightblue) |
+| **Postman**            | API testing and request validation         | ![Postman](https://img.shields.io/badge/Postman-Testing-orange?logo=postman) |
+| **Google Cloud**       | Credential management for Sheets API       | ![Google Cloud](https://img.shields.io/badge/Google%20Cloud-Credentials-blue?logo=google-cloud) |
+| **Git**                | Version control and repository management  | ![Git](https://img.shields.io/badge/Git-Version%20Control-black?logo=git) |
 ---
 
 ## Author & Contacts
