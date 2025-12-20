@@ -16,13 +16,13 @@ The solution includes:
 ## Repository Structure
 
 ```text
-├── app.py                             # Flask app for updating USD/UAH exchange rates
-├── README.md                          # Project documentation
-├── Sales_Performance_Dashboard.pbix   # Power BI dashboard file
-├── requirements/                      # Python dependencies (requirements.txt or folder)
-├── .gitignore                         # Git ignore rules
-├── power_bi_dashboard.png             # Screenshot of Power BI dashboard
-└── Maxidtp_TechTask_PowerBI_Python_v2.xlsx  # Technical assignment and dataset
+├── app.py                                     # Flask app for updating USD/UAH exchange rates
+├── README.md                                  # Project documentation
+├── Sales_Performance_Dashboard.pbix           # Power BI dashboard file
+├── requirements/                              # Python dependencies (requirements.txt or folder)
+├── .gitignore                                 # Git ignore rules
+├── power_bi_dashboard.png                     # Screenshot of Power BI dashboard
+└── Maxidtp_TechTask_PowerBI_Python_v2.xlsx    # Technical assignment and dataset
 ```
 
 ### Files Description
